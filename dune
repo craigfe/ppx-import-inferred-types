@@ -1,0 +1,6 @@
+(executable
+ (name test)
+ (modules test fsm)
+ (libraries ppxlib ppx_import)
+ (preprocess
+  (staged_pps ppx_import ppxlib.metaquot)))
